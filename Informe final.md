@@ -1,108 +1,100 @@
-📊 Análisis de Evasión de Clientes (Churn) – Telecom X
-Introducción
+# Análisis de Evasión de Clientes (Churn) – Telecom X
 
-La evasión de clientes, conocida como Churn, es uno de los principales problemas que enfrentan las empresas de telecomunicaciones. Ocurre cuando un cliente decide cancelar el servicio contratado, lo que genera pérdidas económicas y afecta la estabilidad del negocio.
+## Introducción
 
-El objetivo de este proyecto es analizar los datos de clientes de Telecom X para identificar patrones asociados con la cancelación del servicio. A través del análisis exploratorio de datos y visualizaciones, se busca comprender qué factores pueden influir en la evasión de clientes.
+La evasión de clientes (Churn) ocurre cuando un cliente decide cancelar un servicio. Para las empresas de telecomunicaciones esto representa una pérdida importante, ya que adquirir nuevos clientes suele ser más costoso que mantener los actuales.
 
-Limpieza y Tratamiento de Datos
+El objetivo de este proyecto es analizar los datos de clientes de Telecom X para identificar patrones relacionados con la cancelación del servicio. A través del análisis exploratorio de datos se busca entender qué factores pueden influir en la decisión de los clientes de permanecer o abandonar la empresa.
 
-Para comenzar el análisis fue necesario preparar y limpiar los datos. El dataset original contenía información en formato JSON, por lo que se realizó un proceso de normalización para convertirlo en columnas estructuradas.
+---
 
-Los principales pasos realizados fueron:
+## Limpieza y Tratamiento de Datos
 
-Importación del dataset.
+Antes de realizar el análisis fue necesario preparar y limpiar el dataset.
 
-Normalización de los datos en formato JSON.
+Se realizaron los siguientes pasos:
 
-Conversión de nombres de columnas a minúsculas.
+- Importación del dataset.
+- Normalización de datos en formato JSON a columnas estructuradas.
+- Conversión de nombres de columnas a minúsculas.
+- Transformación de valores categóricos (Yes / No) a valores binarios (1 / 0).
+- Conversión de variables numéricas al formato adecuado.
+- Eliminación de valores nulos y registros duplicados.
 
-Transformación de variables categóricas (Yes/No) a valores binarios (1/0).
+Este proceso permitió trabajar con un conjunto de datos limpio y preparado para el análisis.
 
-Conversión de columnas numéricas al formato adecuado.
+---
 
-Eliminación de valores nulos y registros duplicados.
+## Análisis Exploratorio de Datos
 
-Este proceso permitió obtener un conjunto de datos limpio y adecuado para el análisis.
+Durante el análisis exploratorio se examinaron diferentes variables para identificar patrones relacionados con la evasión de clientes.
 
-Análisis Exploratorio de Datos
+### Distribución de clientes
 
-El análisis exploratorio permitió identificar patrones relacionados con la evasión de clientes a través de diferentes variables.
+Primero se analizó la cantidad de clientes que permanecen activos frente a los que cancelaron el servicio.
 
-Distribución de clientes
+El análisis muestra que la mayoría de los clientes continúa utilizando el servicio, aunque existe un porcentaje importante que ha cancelado.
 
-Primero se analizó la proporción de clientes que cancelaron el servicio frente a los que continúan activos.
+### Variables categóricas
 
-El análisis mostró que la mayoría de los clientes permanecen activos, aunque existe un porcentaje importante que ha cancelado el servicio.
+Se analizaron diferentes variables categóricas que pueden influir en la evasión de clientes:
 
-Variables categóricas
+- Tipo de contrato
+- Método de pago
+- Tipo de servicio de internet
+- Servicios adicionales
 
-Se analizaron diferentes variables categóricas que podrían influir en la evasión de clientes, como:
+Los resultados muestran que los contratos de mayor duración presentan menores tasas de cancelación.
 
-Tipo de contrato
+### Variables numéricas
 
-Método de pago
+También se analizaron variables numéricas importantes:
 
-Tipo de servicio de internet
+- Tenure (tiempo de permanencia del cliente)
+- Monthly Charges (cargos mensuales)
+- Total Charges (cargos totales)
 
-Servicios adicionales
+Los gráficos permiten observar cómo se distribuyen estas variables entre clientes activos y clientes que cancelaron el servicio.
 
-Los gráficos muestran que algunos tipos de contrato presentan menores niveles de evasión, especialmente aquellos de mayor duración.
+---
 
-Variables numéricas
+## Conclusiones
 
-También se analizaron variables numéricas importantes como:
+A partir del análisis realizado se identificaron algunos patrones importantes:
 
-Tiempo de permanencia del cliente en la empresa (tenure)
+- Los clientes con menor tiempo en la empresa tienen mayor probabilidad de cancelar el servicio.
+- Los contratos a largo plazo presentan menor nivel de evasión.
+- Algunos planes con cargos mensuales más altos parecen estar asociados con mayor cancelación.
+- El tipo de servicio contratado también puede influir en la permanencia del cliente.
 
-Cargos mensuales (monthly charges)
+Estos hallazgos ayudan a comprender mejor el comportamiento de los clientes.
 
-Cargos totales (total charges)
+---
 
-Las visualizaciones permitieron observar cómo se distribuyen estas variables entre clientes activos y clientes que cancelaron el servicio.
+## Recomendaciones
 
-Conclusiones e Insights
+Con base en los resultados obtenidos se proponen algunas estrategias para reducir la evasión de clientes:
 
-A partir del análisis realizado se identificaron varios patrones relevantes:
+- Ofrecer incentivos para contratos de mayor duración.
+- Implementar estrategias de retención para clientes nuevos.
+- Revisar los planes con cargos mensuales más altos.
+- Realizar seguimiento a clientes con mayor riesgo de cancelación.
 
-Los clientes con menor tiempo en la empresa tienen mayor probabilidad de cancelar el servicio.
+Estas acciones pueden ayudar a mejorar la satisfacción del cliente y aumentar la retención.
 
-Los contratos a largo plazo presentan menor tasa de evasión.
+---
 
-Algunos planes con cargos mensuales más altos parecen estar asociados con una mayor probabilidad de cancelación.
+## Herramientas utilizadas
 
-Factores como el tipo de servicio contratado y el método de pago también pueden influir en la permanencia del cliente.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Google Colab / Jupyter Notebook
 
-Estos resultados permiten comprender mejor el comportamiento de los clientes y los factores que afectan su decisión de permanecer en la empresa.
+---
 
-Recomendaciones
+## Autor
 
-Con base en los hallazgos del análisis, se proponen algunas recomendaciones para reducir la evasión de clientes:
-
-Promover contratos de mayor duración mediante incentivos o beneficios.
-
-Implementar estrategias de retención para clientes nuevos, especialmente durante los primeros meses.
-
-Evaluar los planes con cargos mensuales elevados para mejorar su competitividad.
-
-Realizar seguimiento a clientes con mayor riesgo de cancelación para mejorar su experiencia.
-
-Aplicar este tipo de estrategias puede ayudar a mejorar la retención de clientes y fortalecer la relación entre la empresa y sus usuarios.
-
-Herramientas utilizadas
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Google Colab / Jupyter Notebook
-
-Autor
-
-Proyecto realizado como parte de un desafío de análisis de datos enfocado en el estudio de la evasión de clientes en empresas de telecomunicaciones.
+Proyecto de análisis de datos enfocado en el estudio de la evasión de clientes en Telecom X.
