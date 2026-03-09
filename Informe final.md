@@ -96,5 +96,6 @@ Estas acciones pueden ayudar a mejorar la satisfacción del cliente y aumentar l
 ---
 
 ## Autor
+- Starlyn Manuel Duarte Guzman
 
 Proyecto de análisis de datos enfocado en el estudio de la evasión de clientes en Telecom X.
