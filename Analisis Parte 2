@@ -1,0 +1,39 @@
+# 📊 Telecom X – Predicción de Cancelación de Clientes (Churn)
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+---
+
+## 📌 Descripción
+
+Este proyecto desarrolla modelos de **Machine Learning** para predecir la **cancelación de clientes (Churn)** en la empresa ficticia **Telecom X**.
+
+La cancelación de clientes representa una pérdida significativa para las empresas de telecomunicaciones. Utilizando análisis de datos y modelos predictivos, es posible identificar clientes con mayor riesgo de cancelar sus servicios y aplicar estrategias de retención.
+
+---
+
+## 🎯 Objetivos del Proyecto
+
+- Preparar los datos para el modelado.
+- Analizar relaciones entre variables.
+- Construir modelos predictivos de clasificación.
+- Evaluar el desempeño de los modelos.
+- Identificar los factores que influyen en la cancelación de clientes.
+
+---
+
+## 🧠 Tecnologías Utilizadas
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+## 📂 Estructura del Proyecto
